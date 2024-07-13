@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  display: flex;
+}
+
+/* cards stuffs */
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #92a3d3;
+  width: 50em;
+  height: 30vh;
+  border: 2px solid rgb(95, 71, 117);
+}
+.text-moment {
+  font-family: "Playwrite IT Moderna", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.container.cards {
+  padding: 0 30px;
+  width: auto;
+  flex-direction: column;
+  overflow-y: hidden;
+  flex-wrap: wrap;
+  overflow: scroll;
+  justify-content: center;
+  flex: 1 1 0;
+  gap: 30px;
+}
+
+#header-moment {
+  padding: 10px 200px;
+}
+
+.card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.column {
+  flex-direction: column;
+}
+
+/* footer stuffs */
+footer {
+  font-family: "Rosarivo", "Playwrite IT Moderna", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  height: 10vh;
+  background-color: rgb(143, 168, 223);
+  color: rgb(6, 66, 66);
+  align-items: center;
+  justify-content: center;
+}
+footer > p {
+  border: 2px solid rgb(6, 66, 66);
+  border-width: 0px 0px 2px;
+  padding: 0px 0px 5px;
+}
+
+/* register box stuffs */
+.register-stuffs {
+  width: 100%;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: aliceblue;
+}
+.register-contents {
+  background-color: #92a3d3;
+  justify-content: space-between;
+  width: 700px;
+  padding: 0px 50px;
+  height: 200px;
+  border: 2px solid;
+  border-radius: 20px;
+}
+.register {
+  justify-content: center;
+}
+
+/* quotes stuffs */
+.container.quote-stuffs {
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(143, 168, 223);
+  padding: 30px 200px;
+}
+
+#seagull-img {
+  background-image: url("./images/seagull-for-brighton.png");
+  background-size: cover;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+.quote-author > #seagull {
+  font-size: 20px;
+  font-family: "Rosarivo", Arial, Helvetica, sans-serif;
+}
+.quote-author > p {
+  font-size: 20px;
+}
+.quote-author {
+  position: absolute;
+  top: 1500px;
+  left: 400px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* scroll bar style */
+.container.cards.people-moment {
+  overflow-y: hidden;
+}
+.people-moment::-webkit-scrollbar {
+  width: 10px;
+}
+.people-moment::-webkit-scrollbar-track {
+  background: #c7c7b8;
+  border-radius: 100vw;
+  margin-block: .5em;
+}
+.people-moment::-webkit-scrollbar-thumb {
+  background: saddlebrown;
+  border-radius: 100vw;
+}
+
+body::-webkit-scrollbar {
+  background: #c7c7b8;
+  width: 0.5em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: saddlebrown;
+  height: 50px;
+}
+
+/* middle main stuffs */
+.moments {
+  background-color: aliceblue;
+  height: 80vh;
+}
+
+
+.container-content {
+  background-color: aliceblue;
+  display: flex;
+  height: 235vh;
+  border: 2px solid saddlebrown;
+  flex-direction: column;
+}
+
+/* text stuffs */
+h1, h2, h3 {
+  font-family: "Rosarivo", Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+  font-family: "Playwrite IT Moderna", Geneva, Tahoma, sans-serif;
+}
+
+.hero.main {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* back to top button stuffs */
+#back-top-button {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+.back-to-top-button {
+  position: fixed;
+  z-index: 20;
+  top: 690px;
+  left: 1550px;
+}
+#back-top {
+  width: 170px;
+  gap: 15px;
+  border: 2px dotted rgb(146, 91, 201);
+  border-radius: 20px;
+  background-color: rgba(146, 163, 211, 0.884);
+  z-index: 11;
+  text-align: center;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #000000;
+  align-content: center;
+  padding: 5px;
+}
+#back-top:hover {
+  border: 2px dashed rgb(146, 91, 201);
+  background-color: rgba(185, 83, 207, 0.411);
+}
+
+/* button stuffs */
+.hero-button {
+  flex: 1;
+}
+
+/* header styles stuff */
+.container-hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 150px;
+}
+
+.container.head {
+  width: 600px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.register-button {
+  font-family: "Playwrite IT Moderna", Geneva, Tahoma, sans-serif;
+  background-color: rgb(220, 224, 255);  ;
+  font-size: medium;
+  border: 4px dotted rgb(146, 91, 201);
+  width: 120px;
+  padding: 15px 20px;
+  border-radius: 20px;
+}
+.register-button:hover {
+  color: cornsilk;
+  background-color: #255bf0;  
+  cursor: pointer;
+  border: 4px dashed cornsilk;
+}
+
+.img-container {
+  width: 700px;
+  flex: 0 1 auto;
+}
+
+.container-header {
+  display: flex;
+  background-color: rgb(143, 168, 223);
+  height: 50vh;
+  flex-direction: column;
+  padding: 10px 50px;
+}
+
+.img-header {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.container-nav {
+  margin: 0px 0px 20px;
+  display: flex;
+  padding: 0px 150px;
+  justify-content: space-between;
+}
+
+/* list & links stuff*/
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  color: rgb(6, 66, 66);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Playwrite IT Moderna", Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(6, 66, 66);
+}
+
+a:hover {
+  color: rgb(56, 133, 233);
+}
+
